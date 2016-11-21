@@ -50,7 +50,7 @@ class TableRowColumn extends Component {
 
 
         return ( 
-            <div className={columnClass} style={prefixer.prefix(compStyle)} onTouchTap={this.onInteraction(childIndex)}>
+            <div className={columnClass} style={prefixer.prefix(compStyle)} onClick={this.onInteraction(childIndex)}>
                   <div style={prefixer.prefix(compCellStyle)}>{this.props.children}</div>
             </div>
         );  

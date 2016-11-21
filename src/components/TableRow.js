@@ -55,7 +55,7 @@ class TableRow extends Component {
         };
 
         return ( 
-            <div className={rowClass} style={prefixer.prefix(compStyle)} onTouchTap={this.onInteraction(childIndex)}>
+            <div className={rowClass} style={prefixer.prefix(compStyle)} onClick={this.onInteraction(childIndex)}>
                 {Children.map(this.props.children, (Column, i) => {
                     return <IndexWrapper childIndex={i}>
                         {Column}
