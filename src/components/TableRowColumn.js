@@ -38,7 +38,7 @@ class TableRowColumn extends Component {
             ...style,
             height: rowHeight,
             justifyContent: alignCellContent,
-            flex: columnRatio[childIndex] ? columnRatio[childIndex] : 1,
+            flex: !isNaN(columnRatio[childIndex]) ? columnRatio[childIndex] : 1,
             cursor: typeof columnInteraction === 'function' ? 'pointer' :undefined
 
         };
